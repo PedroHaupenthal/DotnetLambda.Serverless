@@ -1,0 +1,60 @@
+## Build and debug
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.dbmdl
+*.jfm
+
+## Ignore logs
+*.log
+*.un~ 
+
+## Ignore local configuration files 
+*.config
+*.local.settings.json
+
+## VS specific
+.vs/
+
+## Rider (IDE) specific
+.idea/
+
+## VS Code specific
+.vscode/
+
+## Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+## Folder config file
+Desktop.ini
+
+## Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+## Packages
+*.nupkg
+package-lock.json
+yarn.lock
+
+## AWS
+# deployment tool artifacts
+*.zip
+*.deployresult
+samconfig.toml
+
+## .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Tye
+.tye/
+
+## JetBrains Rider
+.idea/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt

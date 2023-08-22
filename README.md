@@ -1,1 +1,1 @@
-# dotnet-lambda.serverless
+# DotnetLambda.Serverless

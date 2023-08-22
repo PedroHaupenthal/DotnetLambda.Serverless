@@ -1,0 +1,31 @@
+
+
+service: dotnetlambdaserverless
+
+provider:
+  name: aws
+  runtime: dotnet6
+  region: eu-central-1
+
+package:
+  individually: true
+
+functions:
+  example:
+    handler: DotnetLambda.Serverless::DotnetLambda.Handler::HelloWorld
+    package:
+      artifact: bin/release/net6.0/example.zip
+
+    events:
+      - http:
+          path: example
+          method: get
+  getquerystring:
+    handler: DotnetLambda.Serverless::DotnetLambda.Handler::GetQuerystring
+
+    package:
+      artifact: bin/release/net6.0/example.zip
+    events:
+      - http:
+          path: getquerystring
+          method: get
